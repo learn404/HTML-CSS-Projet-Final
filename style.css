@@ -1,0 +1,447 @@
+* {
+  margin: 0; /* Initialisation des marges */
+  padding: 0; /* Initialisation des marges et des rembourrages */
+  box-sizing: border-box; /* Inclus le padding et le border dans la largeur et la hauteur de l'élément */
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  width: fit-content;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 12.5rem;
+  background-color: #184c99;
+}
+
+header h1 {
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.875rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.625rem;
+}
+
+button {
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: #23a6f0;
+  color: white;
+  border: none;
+}
+
+.secondary {
+  background-color: transparent;
+  color: #23a6f0;
+  border: #23a6f0 0.0625rem solid;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - var(--header-height));
+  gap: 3.125rem;
+  position: relative;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.125rem;
+}
+
+.hero-text p,
+h2 {
+  text-align: center;
+  width: fit-content;
+}
+
+.hero-text-title {
+  font-size: 3.625rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-text-description {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: white;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 0.625rem;
+}
+.hero-image {
+  position: absolute;
+  top: -6.25rem;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.practice-advice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.125rem 12.5rem;
+  gap: 3.125rem;
+}
+
+.text-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.125rem;
+}
+
+.practice-advice-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+  margin-top: 3.125rem;
+}
+
+.practice-advice-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.625rem;
+  padding: 2.5rem 1.875rem;
+  gap: 1.875rem;
+  box-shadow: 0 0.8125rem 1.1875rem 0 rgba(0, 0, 0, 0.07);
+  width: 18.75rem;
+}
+
+.practice-advice-card p {
+  flex-wrap: wrap;
+}
+
+.practice-advice-card-hr {
+  width: 3.125rem;
+  margin: 1.25rem 0;
+  border: 0.125rem solid #184c99;
+}
+
+.practice-advice-card-icon {
+  border-radius: 0.625rem;
+  padding: 0.625rem;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.practice-advice-card-icon svg {
+  width: 3.125rem;
+  height: 3.125rem;
+  padding: 0.625rem;
+}
+
+.text-intro-title {
+  color: #23a6f0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.0125rem;
+}
+
+.practice-advice-card-text-courses-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 6.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.practice-advice-card-text {
+  text-align: center;
+}
+
+.practice-advice-card-text-courses {
+  text-align: center;
+}
+
+.package {
+  background-color: #252b42;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 12.1875rem;
+}
+
+.package-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3.125rem;
+}
+
+.package-hr {
+  width: 5.875rem;
+  margin: 1.25rem 0;
+  border: 0.4375rem solid #e74040;
+}
+
+.package-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.package-title-container {
+  width: 31.25rem;
+}
+
+.package-description-container {
+  width: 25rem;
+  text-wrap: wrap;
+  color: white;
+}
+
+.link {
+  color: #23a6f0;
+}
+
+.lessons {
+  padding: 3.125rem 12.5rem;
+  min-height: 100vh;
+}
+
+.cards-container-lessons {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-lessons {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.625rem;
+  padding: 2.5rem 1.875rem;
+  gap: 1.25rem;
+  box-shadow: 0 0.8125rem 1.1875rem 0 rgba(0, 0, 0, 0.07);
+  width: 25rem;
+}
+
+.card-lessons img {
+  width: 18.75rem;
+  margin: auto;
+  border-radius: 0.625rem;
+  aspect-ratio: square;
+}
+
+.cards-description-lessons-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.product-title {
+  font-size: 1.5rem;
+}
+
+.product-description {
+  color: gray;
+  font-size: 0.75rem;
+}
+
+.product-sale-container,
+.product-price-container {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.product-price {
+  text-decoration: line-through;
+}
+
+.product-discount {
+  color: red;
+  font-weight: 700;
+}
+
+.product-lessons-sales-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.product-lessons-datas-container {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.lessons-duration,
+.lessons-number,
+.lessons-progress {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.newsletter {
+  margin-top: 6.25rem;
+  padding: 3.125rem 12.5rem;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #ccc;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+}
+
+.newsletter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  width: 25rem;
+  margin: auto;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.25rem;
+}
+
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 1.25rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.125rem 12.5rem;
+  background-color: #184c99;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 1.25rem 1.875rem;
+  }
+
+  .hero {
+    padding: 1.25rem 1.875rem;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .practice-advice {
+    padding: 1.25rem 1.875rem;
+  }
+
+  .practice-advice-cards {
+    flex-direction: column;
+  }
+
+  .practice-advice-card {
+    width: 100%;
+  }
+
+  .practice-advice-card-icon {
+    display: none;
+  }
+
+  .practice-advice-card-hr {
+    display: none;
+  }
+
+  .package {
+    padding: 0 1.875rem;
+  }
+
+  .lessons {
+    padding: 1.25rem 1.875rem;
+  }
+
+  .cards-container-lessons {
+    flex-direction: column;
+  }
+
+  .card-lessons {
+    width: 100%;
+  }
+
+  .newsletter {
+    padding: 1.25rem 1.875rem;
+  }
+
+  .newsletter-container {
+    width: 100%;
+  }
+
+  .footer-container {
+    padding: 1.25rem 1.875rem;
+  }
+
+  .package-container {
+    flex-direction: column;
+  }
+  .hero-text-title {
+    font-size: 2.5rem;
+    color: #184c99;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+}
